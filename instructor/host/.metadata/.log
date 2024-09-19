@@ -268,3 +268,18 @@ java.io.IOException: Cannot run program "rm": Launching failed
 	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-09-19 13:42:39.829 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Gerin\Documents\GitHub\Embedded-C\instructor\host
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-19 13:42:43.652
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-19 13:42:43.653
+!MESSAGE Log4j2 initialized with config file C:\Users\Gerin\Documents\GitHub\Embedded-C\instructor\host\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-19 13:42:47.881
+!MESSAGE Started RMI Server, listening on port 41337
