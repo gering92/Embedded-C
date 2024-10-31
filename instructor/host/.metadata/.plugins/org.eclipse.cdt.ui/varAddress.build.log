@@ -1,0 +1,6 @@
+15:49:20 **** Incremental Build of configuration Debug for project varAddress ****
+make all 
+make: Nothing to be done for `all'.
+
+15:49:20 Build Finished. 0 errors, 0 warnings. (took 122ms)
+

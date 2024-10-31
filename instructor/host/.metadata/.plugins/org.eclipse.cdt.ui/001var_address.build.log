@@ -1,0 +1,35 @@
+15:09:01 **** Build of configuration Debug for project 001var_address ****
+make all 
+Building file: ../000TestProject/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"000TestProject/main.d" -MT"000TestProject/main.o" -o "000TestProject/main.o" "../000TestProject/main.c"
+Finished building: ../000TestProject/main.c
+ 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.d" -MT".metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o" -o ".metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o" "../.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.c
+ 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: 001var_address
+Invoking: MacOS X C Linker
+gcc  -o "001var_address"  ./000TestProject/main.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./main.o   
+duplicate symbol '_main' in:
+    /Users/geringeorge/Coding Folder/Github_Repos/Embedded-C/My_workspace/host/Debug/000TestProject/main.o
+    /Users/geringeorge/Coding Folder/Github_Repos/Embedded-C/My_workspace/host/Debug/main.o
+ld: 1 duplicate symbols
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [001var_address] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+15:09:02 Build Failed. 2 errors, 0 warnings. (took 1s.17ms)
+

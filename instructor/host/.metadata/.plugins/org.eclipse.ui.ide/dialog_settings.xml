@@ -21,4 +21,7 @@
 		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="/Users/geringeorge/Coding Folder/Github_Repos/Embedded-C/My_workspace/host/001VarAddress"/>
+	</section>
 </section>
