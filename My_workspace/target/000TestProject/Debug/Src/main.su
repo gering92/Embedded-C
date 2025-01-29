@@ -1,1 +1,2 @@
-../Src/main.c:25:5:main	4	static
+../Src/main.c:24:5:main	4	static
+../Src/main.c:31:6:function_add_numbers	32	static

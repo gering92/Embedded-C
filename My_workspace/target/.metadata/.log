@@ -49,3 +49,281 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ggeorge
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-09-19 15:54:54.934
 !MESSAGE Indexed '000TestProject' (3 sources, 53 headers) in 0.495 sec: 1,950 declarations; 2,835 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2025-01-07 07:28:14.241 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-07 07:28:31.539
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-07 07:28:31.543
+!MESSAGE Log4j2 initialized with config file C:\Users\ggeorge\Documents\github_repos\Embedded-C\My_workspace\target\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-07 07:28:52.259
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-07 07:37:28.731
+!MESSAGE Indexed 'function' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.ide.common.services 4 0 2025-01-07 07:57:13.496
+!MESSAGE Not able to get mcu target.
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: No toolchain option in toolchain configuration cdt.managedbuild.toolchain.gnu.mingw.exe.debug.1134510091: 
+	at com.st.stm32cube.ide.mcu.toolchain.ToolChainHelper.getToolChainId(ToolChainHelper.java:166)
+	at com.st.stm32cube.ide.mcu.toolchain.ToolChainHelper.getToolChainInfo(ToolChainHelper.java:109)
+	at com.st.stm32cube.ide.common.services.core.helpers.TargetHelper.getMcu(TargetHelper.java:152)
+	at com.st.stm32cube.ide.mcu.ide.core.TargetHelper.getMcu(TargetHelper.java:177)
+	at com.st.stm32cube.ide.mcu.debug.launch.device.AbstractDebugHardware.isDebugAuthSupported(AbstractDebugHardware.java:582)
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.initializeFrom(StLinkDebugHardware.java:1211)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebuggerTab.initializeFrom(DebuggerTab.java:488)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTabGroup.initializeFrom(AbstractLaunchConfigurationTabGroup.java:93)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupWrapper.initializeFrom(LaunchConfigurationTabGroupWrapper.java:182)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.displayInstanceTabs(LaunchConfigurationTabGroupViewer.java:867)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.lambda$4(LaunchConfigurationTabGroupViewer.java:731)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.inputChanged(LaunchConfigurationTabGroupViewer.java:746)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.setInput0(LaunchConfigurationTabGroupViewer.java:684)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.setInput(LaunchConfigurationTabGroupViewer.java:664)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPropertiesDialog.initializeContent(LaunchConfigurationPropertiesDialog.java:99)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.createContents(LaunchConfigurationsDialog.java:474)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.create(LaunchConfigurationsDialog.java:379)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1240)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPropertiesDialog.open(LaunchConfigurationPropertiesDialog.java:184)
+	at com.st.stm32cube.ide.mcu.debug.launch.ui.MCUDebugLaunchShortcut.createConfiguration(MCUDebugLaunchShortcut.java:91)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebugLaunchShortcut.launch(DebugLaunchShortcut.java:62)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebugLaunchShortcut.searchAndLaunch(DebugLaunchShortcut.java:172)
+	at com.st.stm32cube.ide.mcu.debug.launch.ui.MCUDebugLaunchShortcut.launch(MCUDebugLaunchShortcut.java:121)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:415)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.RelaunchLastAction.runInternal(RelaunchLastAction.java:122)
+	at org.eclipse.debug.ui.actions.RelaunchLastAction.runWithEvent(RelaunchLastAction.java:116)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY com.st.stm32cube.ide.common.services 4 0 2025-01-07 07:57:13.514
+!MESSAGE Not able to get mcu target.
+!STACK 0
+org.eclipse.cdt.managedbuilder.core.BuildException: No toolchain option in toolchain configuration cdt.managedbuild.toolchain.gnu.mingw.exe.debug.1134510091: 
+	at com.st.stm32cube.ide.mcu.toolchain.ToolChainHelper.getToolChainId(ToolChainHelper.java:166)
+	at com.st.stm32cube.ide.mcu.toolchain.ToolChainHelper.getToolChainInfo(ToolChainHelper.java:109)
+	at com.st.stm32cube.ide.common.services.core.helpers.TargetHelper.getMcu(TargetHelper.java:152)
+	at com.st.stm32cube.ide.mcu.ide.core.TargetHelper.getMcu(TargetHelper.java:177)
+	at com.st.stm32cube.ide.mcu.debug.launch.ui.debugauth.DebugAuthLaunchWidget.getDieIdFromConf(DebugAuthLaunchWidget.java:240)
+	at com.st.stm32cube.ide.mcu.debug.launch.ui.debugauth.DebugAuthLaunchWidget.initializeFrom(DebugAuthLaunchWidget.java:92)
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.initializeFrom(StLinkDebugHardware.java:1382)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebuggerTab.initializeFrom(DebuggerTab.java:488)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTabGroup.initializeFrom(AbstractLaunchConfigurationTabGroup.java:93)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupWrapper.initializeFrom(LaunchConfigurationTabGroupWrapper.java:182)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.displayInstanceTabs(LaunchConfigurationTabGroupViewer.java:867)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.lambda$4(LaunchConfigurationTabGroupViewer.java:731)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.inputChanged(LaunchConfigurationTabGroupViewer.java:746)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.setInput0(LaunchConfigurationTabGroupViewer.java:684)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.setInput(LaunchConfigurationTabGroupViewer.java:664)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPropertiesDialog.initializeContent(LaunchConfigurationPropertiesDialog.java:99)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.createContents(LaunchConfigurationsDialog.java:474)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1094)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.create(LaunchConfigurationsDialog.java:379)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1240)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPropertiesDialog.open(LaunchConfigurationPropertiesDialog.java:184)
+	at com.st.stm32cube.ide.mcu.debug.launch.ui.MCUDebugLaunchShortcut.createConfiguration(MCUDebugLaunchShortcut.java:91)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebugLaunchShortcut.launch(DebugLaunchShortcut.java:62)
+	at com.st.stm32cube.ide.mcu.debug.launch.oss.ui.DebugLaunchShortcut.searchAndLaunch(DebugLaunchShortcut.java:172)
+	at com.st.stm32cube.ide.mcu.debug.launch.ui.MCUDebugLaunchShortcut.launch(MCUDebugLaunchShortcut.java:121)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:415)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.RelaunchLastAction.runInternal(RelaunchLastAction.java:122)
+	at org.eclipse.debug.ui.actions.RelaunchLastAction.runWithEvent(RelaunchLastAction.java:116)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-07 08:24:13.698
+!MESSAGE Indexed 'Playground' (1 sources, 13 headers) in 0.311 sec: 1,271 declarations; 1,809 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-07 08:55:01.964
+!MESSAGE Indexed 'playground' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-01-07 09:53:07.264
+!MESSAGE Error with command: gdb --version
+!STACK 0
+java.io.IOException: Cannot run program "gdb": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:450)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:147)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:134)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory$Builder.start(ProcessFactory.java:273)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:335)
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:319)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:536)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-01-16 08:54:55.956 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-01-16 08:55:34.377
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-16 08:55:38.712
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-16 08:55:38.715
+!MESSAGE Log4j2 initialized with config file C:\Users\ggeorge\Documents\github_repos\Embedded-C\My_workspace\target\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-16 08:55:44.452
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-16 09:55:25.389
+!MESSAGE Indexed '001HelloWorld' (2 sources, 53 headers) in 0.914 sec: 1,948 declarations; 2,834 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2025-01-16 14:24:36.639
+!MESSAGE ST-LINK GDB server failed to start (exit code = 6)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-01-16 14:24:36.686
+!MESSAGE Error in final launch sequence:
+
+Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to start GDB server
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (6) ST-LINK firmware upgrade required.
+Please upgrade the ST-LINK firmware using the upgrade tool. Reconnect ST-LINK and click OK
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1830)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-01-16 14:24:36.689
+!MESSAGE Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (6) ST-LINK firmware upgrade required.
+Please upgrade the ST-LINK firmware using the upgrade tool. Reconnect ST-LINK and click OK
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1830)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.toolchain 4 0 2025-01-16 14:24:36.689
+!MESSAGE Error in initializing ST-LINK device.
+Reason: (6) ST-LINK firmware upgrade required.
+Please upgrade the ST-LINK firmware using the upgrade tool. Reconnect ST-LINK and click OK
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-01-16 14:25:26.960
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8

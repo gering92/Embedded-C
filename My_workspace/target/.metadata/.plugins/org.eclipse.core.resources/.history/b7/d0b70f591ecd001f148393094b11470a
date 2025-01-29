@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 7, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdint.h>
+#include <stdio.h>
+
+void function_add_numbers(int a, int b, int c);
+
+int main(void)
+{
+	printf("SUM = %d\n", function_add_numbers(2, 5, 3));
+	return 0;
+}
+
+
+int function_add_numbers(int a, int b, int c) {
+	int sum = a + b + c;
+
+	return sum;
+}

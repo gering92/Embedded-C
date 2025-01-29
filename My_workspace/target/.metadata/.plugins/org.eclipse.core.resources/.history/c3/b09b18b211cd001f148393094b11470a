@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 7, 2025
+ *      Author: ggeorge
+ */
+
+
+int main(void)
+{
+	function_add_numbers(2, 5, 3);
+	return 0;
+}
+
+// function definition
+void function_add_numbers(int a, int b, int c)
+{
+	int sum;
+	sum = a + b + c;
+	printf("Sum = %d\n", sum);
+}

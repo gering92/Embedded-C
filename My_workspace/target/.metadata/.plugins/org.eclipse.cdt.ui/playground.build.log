@@ -1,0 +1,11 @@
+09:25:23 **** Incremental Build of configuration Debug for project playground ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:16:23: warning: unsigned conversion from 'long long int' to 'unsigned char' changes value from '35184372069109' to '245' [-Woverflow]
+   16 |  unsigned char data = 0x1FFFFFFFA0B0 + 0x1245;
+      |                       ^~~~~~~~~~~~~~
+gcc -o playground.exe main.o math.o 
+
+09:25:24 Build Finished. 0 errors, 1 warnings. (took 670ms)
+

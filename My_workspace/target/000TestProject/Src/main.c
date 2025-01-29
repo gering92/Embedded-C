@@ -17,13 +17,19 @@
  */
 
 #include <stdint.h>
+#include <stdio.h>
 
-#if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-#endif
+void function_add_numbers(int a, int b, int c);
 
 int main(void)
 {
-    /* Loop forever */
-	for(;;);
+
+	return 0;
+}
+
+
+void function_add_numbers(int a, int b, int c) {
+	int sum = a + b + c;
+
+	printf("SUM = %d\n", sum);
 }

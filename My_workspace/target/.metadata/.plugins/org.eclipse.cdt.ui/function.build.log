@@ -1,0 +1,5 @@
+07:57:42 **** Clean-only build of configuration Debug for project function ****
+rm -rf main.d function.exe main.o 
+
+07:57:42 Build Finished. 0 errors, 0 warnings. (took 304ms)
+
