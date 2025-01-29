@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 31, 2024
+ *      Author: geringeorge
+ */
+
+
+#include <stdio.h>
+
+int main()
+{
+	char a1 = "A";
+	char a2 = "p";
+	char a3 = "p";
+	char a4 = "l";
+	char a5 = ";";
+
+	printf("Address of char a1 = %p", &a1);
+	printf("Address of char a2 = %p", &a2);
+	printf("Address of char a3 = %p", &a3);
+	printf("Address of char a4 = %p", &a4);
+	printf("Address of char a5 = %p", &a5);
+
+}
