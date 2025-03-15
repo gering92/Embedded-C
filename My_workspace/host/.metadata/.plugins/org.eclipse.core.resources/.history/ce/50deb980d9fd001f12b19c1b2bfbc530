@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 10, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdio.h>
+
+int main(void) {
+	char c1 = 100;
+
+	printf("Address of c1: %p\n", (char*) &c1);
+
+	char* pointerC1 = &c1;
+
+
+	char data = *pointerC1;
+	printf("Data = %d\n", data);
+
+	*pointerC1 = 65;
+	data = *pointerC1;
+	printf("New Data = %d\n", data);
+
+	printf("End Program");
+	printf("\nPress Enter Key to Exit the Application...");
+	while(getchar() != '\n') {
+
+	}
+	getchar();
+}

@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 10, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdio.h>
+
+int main(void) {
+	char c1 = 100;
+
+	printf("Address of c1: %p", (char*) &c1);
+
+	char* pointerC1 = &c1;
+
+}

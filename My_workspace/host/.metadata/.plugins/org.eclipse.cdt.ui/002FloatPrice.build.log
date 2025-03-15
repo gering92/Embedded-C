@@ -1,0 +1,7 @@
+14:04:45 **** Incremental Build of configuration Debug for project 002FloatPrice ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o 002FloatPrice.exe main.o 
+
+14:04:46 Build Finished. 0 errors, 0 warnings. (took 719ms)
+

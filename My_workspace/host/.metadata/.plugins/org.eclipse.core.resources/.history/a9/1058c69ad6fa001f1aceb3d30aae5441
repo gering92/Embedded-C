@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 6, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdio.h>
+
+int main(void) {
+	float chargeE = -1.60217662e-19;
+
+	printf("chargeE = %f\n", chargeE);
+	printf("chargeE = %e\n", chargeE);
+	return 0;
+}

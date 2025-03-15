@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 6, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdio.h>
+
+int main(void) {
+	float number = 45.78976834578;
+
+	printf("Number = %lf\n", number);
+	return 0;
+}

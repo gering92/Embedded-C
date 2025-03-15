@@ -1,0 +1,40 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 13, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdint.h>
+#include <stdio.h>
+
+void wait_for_user_input(void);
+
+int main(void) {
+
+
+
+	printf("Area Calculation Program\n");
+	printf("Circle          -->c\n");
+	printf("Triangle        -->t\n");
+	printf("Rectangle       -->r\n");
+	printf("Square          -->s\n");
+	printf("Trapezoid       -->z\n");
+
+	printf("Enter the code: ");
+
+
+	return 0;
+}
+
+
+
+
+void wait_for_user_input(void) {
+	printf("\nPress Enter Key to Exit the Application...");
+	while(getchar() != '\n') {
+
+	}
+	getchar();
+}

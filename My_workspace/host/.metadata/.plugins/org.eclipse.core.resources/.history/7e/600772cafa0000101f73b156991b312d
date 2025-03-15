@@ -1,0 +1,75 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 13, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdint.h>
+#include <stdio.h>
+#define PI 3.141592653589793
+
+void wait_for_user_input(void);
+
+int main(void) {
+
+	char userChoice;
+
+
+	printf("Area Calculation Program\n");
+	printf("Circle          -->c\n");
+	printf("Triangle        -->t\n");
+	printf("Rectangle       -->r\n");
+	printf("Square          -->s\n");
+	printf("Trapezoid       -->z\n");
+
+	printf("Enter the code here: ");
+	if (scanf("%c", &userChoice) == 0) {
+		printf("Invalid input! Exiting ...\n");
+		wait_for_user_input();
+		return 1;
+	}
+
+	switch(userChoice) {
+	case 'c': {
+		float radius;
+		printf("Circle Area Calculation: \n");
+		printf("Enter the radius value: \n");
+		if (scanf("%f", &radius) == 0) {
+			printf("Invalid input! Exiting ... \n");
+			wait_for_user_input();
+			return 1;
+		}
+
+		if (radius <= 0) {
+			printf("Radius must be positive! \n");
+			wait_for_user_input();
+			return 1;
+		}
+		float area = PI * (radius * radius);
+		printf("Area of Circle with Radius %.6f: %.6f\n", radius, area);
+	}
+
+
+	default:
+		printf("Invalid Choice. \n");
+		wait_for_user_input();
+		return 1;
+	}
+
+
+
+	return 0;
+}
+
+
+
+
+void wait_for_user_input(void) {
+	printf("\nPress Enter Key to Exit the Application...");
+	while(getchar() != '\n') {
+
+	}
+	getchar();
+}

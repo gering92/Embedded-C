@@ -1,0 +1,72 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 13, 2025
+ *      Author: ggeorge
+ */
+
+
+#include <stdint.h>
+#include <stdio.h>
+#define PI 3.141592653589793
+
+void wait_for_user_input(void);
+
+int main(void) {
+
+	char userChoice;
+
+
+	printf("Area Calculation Program\n");
+	printf("Circle          -->c\n");
+	printf("Triangle        -->t\n");
+	printf("Rectangle       -->r\n");
+	printf("Square          -->s\n");
+	printf("Trapezoid       -->z\n");
+
+	printf("Enter the code here: ");
+	if (scanf("%c", &userChoice) == 0) {
+		printf("Invalid input! Exiting ...\n");
+		wait_for_user_input();
+		return 1;
+	}
+
+	switch(userChoice) {
+	case 'c':
+		uint32_t radius;
+		printf("Circle Area Calculation: \n");
+		printf("Enter the radius value: \n");
+		if (scanf("%d", &radius) == 0) {
+			printf("Invalid input! Exiting ... \n");
+			wait_for_user_input();
+			return 1;
+		}
+
+		if (radius < 0) {
+			printf("Radius cannot be negative! \n");
+			wait_for_user_input();
+			return 1;
+		}
+		else if (radius == 0) {
+			printf("Radius cannot be zero! \n");
+			wait_for_user_input();
+			return 1;
+		}
+		uint32_t area =
+
+	}
+
+
+	return 0;
+}
+
+
+
+
+void wait_for_user_input(void) {
+	printf("\nPress Enter Key to Exit the Application...");
+	while(getchar() != '\n') {
+
+	}
+	getchar();
+}

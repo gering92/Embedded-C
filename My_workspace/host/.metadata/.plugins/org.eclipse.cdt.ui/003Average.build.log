@@ -1,0 +1,5 @@
+09:40:18 **** Clean-only build of configuration Debug for project 003Average ****
+rm -rf main_new.d main_new.o 003Average.exe 
+
+09:40:19 Build Finished. 0 errors, 0 warnings. (took 208ms)
+
